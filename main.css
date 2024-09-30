@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    --snd-bg-color: #000000;
+    --text-color: #ffff;
+    --main-color: #834333;
+    --chocolate: #834333s; 
+    --opal: #abcdef; 
+    --fs-5: 1.5rem;
+    --fw-600: 600; 
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+header {
+    background:#834333;
+    color: white; 
+    padding:10px 0;
+}
+ .header{
+    background: var(fixed);
+    padding-block: 10px;
+
+ }
+
+ .header .logo img{
+    margin-inline:auto;
+    width:100px;
+ }
+
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Size of the main title */
+}
+
+p {
+    font-size: 1.2em; /* Size of the paragraph text */
+}
+
+nav {
+    margin: 20px 0; /* Spacing around nav */
+}
+
+nav a {
+    margin: 0 15px; /* Space between nav links */
+    text-decoration: none; /* Remove underline */
+    color: #ffff; /* Link color */
+    font-weight: bold; /* Bold text for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.section-subtitle{
+    color: var(--orange-soda);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    padding: 5px 20px;
+    background: hsla(9, 100%, 62%, 0.1);
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 15px;
+}
+.home {
+    display: flex;
+    justify-content: space-between; 
+    align-items: left; 
+}
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+    position: left;
+}
+
+span {
+    color: var(--white);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    position:left;
+}
+home-img img {
+    width: 80%;
+    margin-left: 20px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    position:left;
+}
+.home-content {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 1rem; /* Space between elements */
+}
+
+.btn {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    padding: 1rem 2rem; /* Add padding for a rectangular shape */
+    width: auto; /* Allow width to adjust based on content */
+    height: auto; /* Allow height to adjust based on content */
+    background: var(--main-color);
+    border-radius: 0; /* No rounded corners */
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.4rem; /* Adjusted button text size */
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: darken(var(--main-color), 10%); /* Darker on hover */
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+    margin-bottom: -50rem; /* Space below About section */
+    padding: 4rem 0; /* Optional padding inside */
+    }
+    
+
+.about-img img {
+    width: 35vw;
+}
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h1 {
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h2{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.about .btn{
+    max-width: max-content;
+    --text-transform: uppercase;
+
+}
+.btn:hover {
+    background: #834333; 
+}
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    color: #834333;
+}
+
+.services h2{
+    margin-bottom: 3rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.services-container .services-card{
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.services-container .services-card:hover {
+    border-color: var(b--main-color);
+    transform: scale(1.02);
+}
+
+.services-card i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.services-card h3{
+    font-size: 2.2rem;
+}
+.services-card p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.services-card .card-link{
+    color:#834333;
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+
+}
+
+.service-card:is(:hover, :focus)  .card-link{
+    color: var(--chocolate);
+}
+
+.service-card::after{
+    content:'';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width:0;
+    height: 4px;
+    background: var(--chocolate);
+    transition:var(--transition);
+    
+}
+.card-link i {
+    font-size: 1.2rem; /* Adjust size as needed */
+    margin-left: 0.5rem; /* Optional: add space between text and icon */
+}
+.service-card:hover .card-link {
+    color: var(--chocolate); /* Ensure the correct class is used */
+}
+
+
+.service-card:is(:hover,:focus)::after{
+    width: 100%;
+}
+.services {
+    margin-bottom: 4rem; /* Adjust gap as needed */
+}
+
+/* property */
+.property {
+    background: var(--snd-bg-color);
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    color: #834333;
+}
+
+.property h2 {
+    margin-bottom: 3rem;
+}
+
+.property-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.property-card {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display:block;
+}
+
+.property-card img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.property-card:hover img {
+    transform: scale(1.1);
+}
+
+.property-content {
+    padding: 1rem; /* Add padding to space out content */
+}
+
+.property-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.property-content h3 {
+    font-size: 2.6rem;
+}
+.property-scrollbar {
+    font-size: 2rem;
+    color: var(--snd-bg-color);
+}
+
+.location {
+    display: flex; /* Use flex for better alignment */
+    align-items: center; /* Align icon and text vertically */
+    margin-top: 0.5rem; /* Space above the location */
+    color: #834333; /* Change this to your desired color */
+}
+
+.location i {
+    margin-right: 0.5rem; /* Space between icon and address */
+}
+
+/* Optional: To change the font size of the address */
+.location address {
+    font-size: 2rem; /* Adjust as needed */
+    margin: 0; /* Remove default margin for address */
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 1rem; /* Space below heading */
+    color: #834333; /* Main color for headings */
+    text-align: center; /* Center the heading */
+}
+
+p {
+    font-size: 1.4rem; /* Paragraph size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 1.5rem; /* Space below paragraphs */
+    text-align: center; /* Center align the text */
+}
+
+a {
+    color: #834333; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: darken(var(--main-color), 10%); /* Darker on hover (adjust as needed) */
+}
+
+/* Optional: Adding a background and padding for the whole contact section */
+.contact-section {
+    background-color: var(--snd-bg-color); /* Background color */
+    padding: 2rem; /* Padding for the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Limit width */
+    margin: 0 auto; /* Center the section */
+}
+
+
+footer {
+    margin-top: 20px; /* Margin above footer */
+    padding: 10px 0; /* Padding for footer */
+    background-color: #834333; /* Footer background color */
+    color: white; /* White text for footer */
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img img{
+        width:90vw;
+        margin-top: 4rem;
+    }
+    .tabs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .property h2{
+        margin-bottom: 3rem;
+    }
+    .property-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 617px){
+    .property-container{
+        grid-template-columns: 1fr;
+    }
+    .home-img img{
+        width: 80rem;
+        margin-top: 8rem;
+    }
+    .about-img img{
+        width: 100vw;
+        margin-top: 4rem;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
